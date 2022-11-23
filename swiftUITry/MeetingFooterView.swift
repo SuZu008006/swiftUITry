@@ -16,7 +16,7 @@ struct MeetingFooterView: View {
         return index + 1
     }
     private var isLastSpeaker: Bool {
-        return speakers.dropLast().allSatisfy {
+        speakers.dropLast().allSatisfy {
             $0.isCompleted
         }
     }
